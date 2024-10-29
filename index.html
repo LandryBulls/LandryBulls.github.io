@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-
-<link rel="stylesheet" href="landry.css">
-
-<html>
-
-<!-- center the first heading -->
-
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landry Bulls - Dartmouth College</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        h1 {
-            text-align: center;
-    ;
+        .title {
+            font-size: 3em;
+            font-weight: bold;
         }
     </style>
-    <title>Landry Bulls</title>
-    <link rel="stylesheet" href="landry.css">
 </head>
-
 <body>
+    <nav class="nav-container">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="pages/about.html" class="nav-link">About</a>
+        <a href="pages/research.html" class="nav-link">Research</a>
+        <a href="pages/publications.html" class="nav-link">Publications</a>
+        <a href="pages/creative.html" class="nav-link">Creative</a>
+    </nav>
 
-    <h1>Welcome to My Homepage</h1>
+    <main role="main">
+        <section class="section hero-section">
+            <div class="hero-content">
+                <h1 class="title">Landry Bulls</h1>
+                <p>Doctoral Candidate</p>
+                <p>Department of Psychological and Brain Sciences</p>
+                <p>Dartmouth College</p>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile-photo.jpg" alt="Landry Bulls">
+            </div>
+        </section>
 
-    <!-- add tabs along the top -->
-<nav>
-    <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">Publications</a></li>
-        <li><a href="#">Creative</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+        <section class="section research-interests">
+            <h2>How do our brains navigate the complexity of multiple people at once?</h2>
+            <p>I'm interested in the hidden dynamics of complex social interactions like group conversations, dance floors, and rituals. What is the nature of self within these dynamic, ever-changing social environments that blur the boundaries between one individual and the next?</p>
+        </section>
+    </main>
 
-<div style="position: absolute; top: 125px; right: 25px;">
-    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxAFCTMbImT1_X4voVlrHX6OJLKQDrDb0lUwh0f7rI1kXcy8nq" alt="Landry Bulls">
-    <figcaption>I promise this isn't a mugshot!</figcaption>
-</div>
+    <footer class="container" role="contentinfo">
+        © 2024 Landry Bulls - Dartmouth College
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
-
-
 </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Landry Bulls</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preload" href="../fonts/AlteHaasGroteskRegular.ttf" as="font" type="font/ttf" crossorigin>
+    <style>
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-content, .hero-image {
+            flex: 1;
+        }
+        .hero-image img {
+            max-width: 50%; /* Adjust this value to make the image smaller */
+            height: auto;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f8f8;
+            padding: 1em;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .nav-link.active {
+            color: #007bff;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="nav-container">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="publications.html" class="nav-link">Publications</a>
+        <a href="creative.html" class="nav-link">Creative</a>
+    </nav>
+
+    <main role="main">
+        <section class="section">
+            <h1><strong>About Me</strong></h1>
+            <div class="two-column">
+                <div class="text-content">
+                    <p>I'm a PhD student in Psychological and Brain Sciences at Dartmouth College, fascinated by the complexity of human social interactions and the neural mechanisms that enable our rich social connections.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><strong>Research Focus</strong></h2>
+            <div class="two-column">
+                <div class="text-content">
+                    <p>My research explores how the brain processes and integrates the massive amount of social information available in face-to-face group interactions. I'm particularly interested in:</p>
+                    <ul>
+                        <li>How bodily gestures, facial expressions, word patterns, and vocal intonations combine in multi-person conversations</li>
+                        <li>The computational principles underlying how the social brain synthesizes information about multiple people</li>
+                        <li>Neural representations of groups and their emergence from individual perceptions</li>
+                        <li>How multimodal signatures in group conversations predict changes in interpersonal perceptions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><strong>Technical Skills</strong></h2>
+            <div class="two-column">
+                <div class="text-content">
+                    <h3><strong>Programming</strong></h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>Software development</li>
+                        <li>Git/Github</li>
+                    </ul>
+                </div>
+                <div class="text-content">
+                    <h3><strong>Data Analysis</strong></h3>
+                    <ul>
+                        <li>Deep learning</li>
+                        <li>Representational similarity analysis</li>
+                        <li>Multiple regression</li>
+                        <li>Graph theoretic approaches</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2><strong>Education</strong></h2>
+            <div class="two-column">
+                <div class="text-content">
+                    <h3><strong>PhD in Psychological and Brain Sciences</strong></h3>
+                    <p>Dartmouth College (2022 - Present)</p>
+                </div>
+                <div class="text-content">
+                    <h3><strong>B.S. in Psychology</strong></h3>
+                    <p>University of Texas at Austin (2020)</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container" role="contentinfo">
+        © 2024 Landry Bulls - Dartmouth College
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
