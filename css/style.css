@@ -4,6 +4,12 @@
     src: url('../fonts/AlteHaasGroteskRegular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Alte Haas Grotesk';
+    src: url('../fonts/AlteHaasGroteskBold.ttf') format('truetype');
+    font-weight: bold;
+}
+
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #34495e;
@@ -21,6 +27,12 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+}
+
+/* Apply bold font to titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alte Haas Grotesk', sans-serif;
+    font-weight: bold;
 }
 
 /* Navigation styles */
