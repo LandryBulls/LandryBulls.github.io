@@ -10,6 +10,33 @@
             font-size: 3em;
             font-weight: bold;
         }
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-content, .hero-image {
+            flex: 1;
+        }
+        .hero-image img {
+            max-width: 50%; /* Adjust this value to make the image smaller */
+            height: auto;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f8f8;
+            padding: 1em;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .nav-link.active {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
