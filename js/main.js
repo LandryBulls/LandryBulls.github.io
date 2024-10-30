@@ -1,7 +1,7 @@
 let lastFlickerTime = 0;
 const flickerInterval = 1000 / 100;
 const minOpacity = 0.0;
-const maxOpacity = 0.07;
+const maxOpacity = 0.04;
 
 
 document.addEventListener('DOMContentLoaded', () => {
