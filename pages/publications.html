@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Landry Bulls</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preload" href="../fonts/AlteHaasGroteskRegular.ttf" as="font" type="font/ttf" crossorigin>
+    <style>
+        .publication-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .publication-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .publication-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-authors {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-venue {
+            font-style: italic;
+            color: var(--text-color);
+        }
+
+        .publication-links {
+            margin-top: 1rem;
+        }
+
+        .publication-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .publication-links a:hover {
+            color: var(--hover-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="publications.html" class="nav-link active">Publications</a>
+        <a href="creative.html" class="nav-link">Creative</a>
+    </nav>
+
+    <main role="main">
+        <section class="section">
+            <h1><strong>Publications</strong></h1>
+            <!-- Publications will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <footer class="container" role="contentinfo">
+        © 2024 Landry Bulls - Dartmouth College
+    </footer>
+
+    <script src="../js/publications.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
