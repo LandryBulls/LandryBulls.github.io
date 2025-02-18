@@ -10,43 +10,62 @@
         .title {
             font-size: 3em;
             font-weight: bold;
+            margin-bottom: 0.2em;
         }
         .hero-section {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            text-align: center;
-            margin-bottom: 2em;
+            max-width: 1200px;
+            margin: 4em auto;
+            padding: 0 2em;
+            gap: 4em;
         }
-        .hero-content, .hero-image {
+        .hero-content {
             flex: 1;
+            text-align: left;
+        }
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
         }
         .hero-image img {
-            max-width: 50%;
-            height: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
         .nav-container {
             display: flex;
             justify-content: space-around;
             background-color: #f8f8f8;
             padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
         .nav-link {
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            padding: 0.5em 1em;
+            transition: color 0.3s ease;
         }
         .nav-link.active {
             color: #007bff;
         }
         .section {
-            margin: 2em 0;
+            max-width: 1200px;
+            margin: 4em auto;
             padding: 0 2em;
         }
         .cv-link {
             display: inline-block;
-            margin-top: 1em;
-            padding: 0.5em 1em;
+            margin-top: 2em;
+            padding: 0.8em 1.5em;
             border: 2px solid #007bff;
             border-radius: 4px;
             color: #007bff;
@@ -57,6 +76,43 @@
         .cv-link:hover {
             background-color: #007bff;
             color: white;
+            transform: translateY(-2px);
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+        .institution {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 2em;
+        }
+        .about-content {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #444;
+            max-width: 800px;
+        }
+        footer {
+            text-align: center;
+            padding: 2em;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 2em;
+            }
+            .hero-content {
+                text-align: center;
+            }
+            .hero-image img {
+                width: 250px;
+                height: 250px;
+            }
         }
     </style>
 </head>
@@ -69,26 +125,21 @@
     </nav>
 
     <main role="main">
-        <section class="section hero-section">
+        <section class="hero-section">
             <div class="hero-content">
                 <h1 class="title">Landry Bulls</h1>
-                <p>Doctoral Candidate</p>
-                <p>Department of Psychological and Brain Sciences</p>
-                <p>Dartmouth College</p>
-                <a href="files/LandryBulls_CV.pdf" class="cv-link" target="_blank">CV</a>
+                <p class="subtitle">Doctoral Candidate</p>
+                <p class="institution">Department of Psychological and Brain Sciences<br>Dartmouth College</p>
+                <p class="about-content">I'm a doctoral candidate in the Department of Psychological and Brain Sciences at Dartmouth College under the supervision of Dr. Mark Thornton in the SCRAP Lab. I'm deeply fascinated by the complexity of human social interactions and the neural mechanisms enabling people to form a sense of connection with not only other individuals, but also with the groups they inhabit - small and large.</p>
+                <a href="files/LandryBulls_CV.pdf" class="cv-link" target="_blank">View CV</a>
             </div>
             <div class="hero-image">
                 <img src="images/profile-photo.jpg" alt="Landry Bulls">
             </div>
         </section>
-
-        <section class="section">
-            <h2>About Me</h2>
-            <p>I'm a doctoral candidate in the Department of Psychological and Brain Sciences at Dartmouth College under the supervision of Dr. Mark Thornton in the SCRAP Lab. I'm deeply fascinated by the complexity of human social interactions and the neural mechanisms enabling people to form a sense of connection with not only other individuals, but also with the groups they inhabit - small and large.</p>
-        </section>
     </main>
 
-    <footer class="container" role="contentinfo">
+    <footer role="contentinfo">
         © 2024 Landry Bulls - Dartmouth College
     </footer>
 
