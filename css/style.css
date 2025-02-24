@@ -43,6 +43,18 @@ h1, h2, h3, h4, h5, h6 {
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.nav-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
 .nav-link {
@@ -53,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all var(--transition-speed) ease;
     position: relative;
     font-size: 1.1rem;
+    flex-shrink: 0;
 }
 
 .nav-link::after {
@@ -172,6 +185,16 @@ h1, h2, h3, h4, h5, h6 {
 
     .two-column {
         grid-template-columns: 1fr;
+    }
+
+    .nav-container {
+        padding: 1rem;
+        justify-content: flex-start;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0.75rem;
+        margin: 0 0.25rem;
     }
 }
 
