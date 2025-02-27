@@ -59,8 +59,8 @@
         </section>
 
         <section class="section hero-image-section" style="text-align: center; margin: 0 auto 2em; position: relative;">
-            <img src="../images/haring.jpg" alt="Research visualization" style="max-width: 50%; height: auto; display: block; margin: 0 auto;">
-            <div style="position: absolute; bottom: 10px; right: 28%; font-size: 0.8em; color: #666;">
+            <img src="../images/haring.jpg" alt="Research visualization" style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
+            <div style="position: absolute; bottom: 10px; right: 18%; font-size: 0.8em; color: #666;">
                 "Dancing Figures" by Keith Haring, 1987
             </div>
         </section>
@@ -79,17 +79,13 @@
         </section>
 
         <section class="section">
-            <h2>Research Paradigm</h2>
-            <div class="pdf-embed" style="display: flex; justify-content: center; margin: 2em 0;">
-                <object data="../images/paradigm.pdf" type="application/pdf" width="800" height="600">
-                    <p>It appears your browser doesn't support embedded PDFs. 
-                    You can <a href="../images/paradigm.pdf">download the PDF</a> instead.</p>
-                </object>
-            </div>
-        </section>
-
-        <section class="section">
             <h2>Approach</h2>
+            <div style="display: flex; justify-content: center; margin: 1em 0 2em 0; flex-direction: column; align-items: center;">
+                <img src="../images/smack.gif" alt="Research Approach Animation" style="max-width: 80%; height: auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <div style="font-size: 0.9em; color: #666; margin-top: 0.5em; text-align: center;">
+                    Visualization of extracted social features from a group conversation
+                </div>
+            </div>
             <div class="method-cards">
                 <div class="card">
                     <h3>Multi-Modal Recording</h3>
@@ -111,6 +107,9 @@
             <div class="project-cards">
                 <div class="project-card">
                     <h3>Identifying collective social states in free-flowing group conversations</h3>
+                    <div style="display: flex; justify-content: center; margin: 2em 0;">
+                        <img src="../images/paradigm.png" alt="Research Paradigm" style="max-width: 90%; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    </div>
                     <p>A group conversation may transition between boisterous laughter, heated debate, and juicy gossip all within the span of a few minutes. How do people use their communicative repertoires to orchestrate their collective navigation between these different states? What are the primary psychological dimensions that differentiate these states? How might different states serve different social functions?</p>
                     <p>To answer these questions, I've collected a dataset of group conversations by recording them with cameras at multiple angles and face-worn microphones. Using a collection of pre-trained deep neural networks (DNNs), I've extracted the dynamic facial expressions, 3-dimensional body language, vocal intonation, and speech content of each participant in every conversation in addition to pre- and post-conversation surveys.</p>
                     <p>I am using these data to understand the multimodal signatures that recur often enough in conversations to be useful in predicting their future. This is accomplished by taking the social signals measured by pre-trained DNNs and in turn using those signals as inputs to downstream DNNs that predict different aspects of the group conversation, like it's future trajectory or reported quality.</p>
