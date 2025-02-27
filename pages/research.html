@@ -68,13 +68,23 @@
         <section class="section">
             <h2>The Challenge of Participation</h2>
             <div class="text-content">
-                <p>From intimate dinner parties to packed concert venues, many of the social situations we encounter in life are brimming with a sea of potentially useful information. This information is multimodal, multichannel, and multiperson. In the visual modality, social information is embedded in faces and bodies. In the auditory modality, both vocal prosody and phonetics are unique features of speech. Moreover, many of these social signals are irreducibly relative; they exist as cross-modal dependencies between individuals. Despite this incredible complexity, people possess a remarkable ability to enmesh themselves into these situations and participate in the emergent social systems that define them. My research examines the dynamic patterns that emerge in multimodal social communication–both within and between individuals–and what these patterns might be able to tell us about people’s personal relationships with each other. </p>
+                <p>From intimate dinner parties to packed concert venues, many of the social situations we encounter in life are brimming with a sea of potentially useful information. This information is multimodal, multichannel, and multiperson. In the visual modality, social information is embedded in faces and bodies. In the auditory modality, both vocal prosody and phonetics are unique features of speech. Moreover, many of these social signals are irreducibly relative; they exist as cross-modal dependencies between individuals. Despite this incredible complexity, people possess a remarkable ability to enmesh themselves into these situations and participate in the emergent social systems that define them. My research examines the dynamic patterns that emerge in multimodal social communication–both within and between individuals–and what these patterns might be able to tell us about people's personal relationships with each other. </p>
                 <p>The core of my research can be broken down into a few subquestions:</p>
                 <ul>
                     <li>How do people coordinate the trajectories of group conversations using multimodal signaling?</li>
                     <li>How does the brain segment social events during conversations, and how might people embody this segmentation process through nonverbal communication?</li>
                     <li>How might distributed patterns in multimodal communication between two or more individuals index the nature of their interpersonal relationships?</li>
                 </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Research Paradigm</h2>
+            <div class="pdf-embed" style="display: flex; justify-content: center; margin: 2em 0;">
+                <object data="../images/paradigm.pdf" type="application/pdf" width="800" height="600">
+                    <p>It appears your browser doesn't support embedded PDFs. 
+                    You can <a href="../images/paradigm.pdf">download the PDF</a> instead.</p>
+                </object>
             </div>
         </section>
 
@@ -101,14 +111,14 @@
             <div class="project-cards">
                 <div class="project-card">
                     <h3>Identifying collective social states in free-flowing group conversations</h3>
-                    <p>A group conversation may transition between boisterous laughter, heated debated, and juicy gossip all within the span of a few minutes. How do people use their communicative repertoires to orchestrate their collective navigation between these different states? What are the primary psychological dimensions that differentiate these states? How might different states serve different social functions?</p>
-                    <p>To answer these questions, I've collected a dataset of group conversations by recording them with cameras at multiple angles and face-worn microphones. Using a collection of pre-trained deep neural networks, I've extracted the dynamic facial expressions, 3-dimensional body langauge, vocal intonation, and speech content of each participant in every conversation in addition to pre- and post-conversation surveys.
-                    <p>I am using these data to understand the multimodal signatures that recur often enough in conversations to be useful in predicting their future. </p>
-                    </p>
-        
-
-
-
+                    <p>A group conversation may transition between boisterous laughter, heated debate, and juicy gossip all within the span of a few minutes. How do people use their communicative repertoires to orchestrate their collective navigation between these different states? What are the primary psychological dimensions that differentiate these states? How might different states serve different social functions?</p>
+                    <p>To answer these questions, I've collected a dataset of group conversations by recording them with cameras at multiple angles and face-worn microphones. Using a collection of pre-trained deep neural networks (DNNs), I've extracted the dynamic facial expressions, 3-dimensional body language, vocal intonation, and speech content of each participant in every conversation in addition to pre- and post-conversation surveys.</p>
+                    <p>I am using these data to understand the multimodal signatures that recur often enough in conversations to be useful in predicting their future. This is accomplished by taking the social signals measured by pre-trained DNNs and in turn using those signals as inputs to downstream DNNs that predict different aspects of the group conversation, like it's future trajectory or reported quality.</p>
+                    <p>While I am in the middle of these more complex modeling tasks, I have already discovered basic relationships between simple conversational features and how people rate each other in the surveys. For example, people are generally in consensus about each other's extraversion, and this extraversion is strongly predictive of and predicted by the total number of words a given individual speaks in the conversation. In addition, I've found that people report feeling more connected to those who ask more conversations, even when controlling for the number of words spoken by askers. </p>
+                    <p>As my main project, these analyses are in active development, and I look forward to sharing them here. </p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="container" role="contentinfo">
