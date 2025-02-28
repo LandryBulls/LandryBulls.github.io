@@ -28,6 +28,8 @@
         .hero-image {
             flex: 1;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
         }
         .hero-image img {
@@ -36,6 +38,23 @@
             border-radius: 50%;
             object-fit: cover;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            margin-top: 1em;
+            width: 100%;
+        }
+        .social-links a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+        .social-links a:hover {
+            color: #0056b3;
+            transform: translateY(-2px);
         }
         .nav-container {
             display: flex;
@@ -113,6 +132,10 @@
                 width: 250px;
                 height: 250px;
             }
+            .social-links {
+                margin-top: 0.8em;
+                gap: 1em;
+            }
         }
     </style>
 </head>
@@ -135,6 +158,11 @@
             </div>
             <div class="hero-image">
                 <img src="images/profile-photo.jpg" alt="Landry Bulls">
+                <div class="social-links">
+                    <a href="mailto:Landry.S.Bulls.gr@dartmouth.edu" title="Email">Email</a>
+                    <a href="https://landrybulls.bsky.social" target="_blank" title="Bluesky">Bluesky</a>
+                    <a href="https://scholar.google.com/citations?user=1Im36vAAAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar">Google Scholar</a>
+                </div>
             </div>
         </section>
     </main>
