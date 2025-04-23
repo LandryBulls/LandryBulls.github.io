@@ -49,7 +49,7 @@ const publications = {
             venue: "Society for Affective Science 2025 Conference",
             year: 2025,
             links: {
-                PDF: "files/groupstates_poster.pdf"
+                PDF: "../files/groupstates_poster.pdf"
             }
         },
         {
