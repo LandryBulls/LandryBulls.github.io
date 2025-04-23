@@ -44,6 +44,15 @@ const publications = {
     
     posters: [
         {
+            title: "Detecting distributed social states from multimodal signals in group conversations",
+            authors: "Bulls, L., & Thornton, M. A.",
+            venue: "Society for Affective Science 2025 Conference",
+            year: 2025,
+            links: {
+                PDF: "files/groupstates_poster.pdf"
+            }
+        },
+        {
             title: "Accurate perception of leadership in group conversations",
             authors: "Bulls, L., & Thornton, M. A.",
             venue: "Social and Affective Neuroscience Society 2024 Conference",
