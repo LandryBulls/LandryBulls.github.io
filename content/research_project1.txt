@@ -1,27 +1,11 @@
-\
-Group conversations naturally flow between different collective states - from moments of shared laughter, to passionate debates, 
-to intimate gossip. I'm fascinated by how people coordinate their communication to navigate between these states. What psychological 
-dimensions define these different states? And what are the downstream consequences of these states on peoples relationships, sense of 
-self, and well-being?
+Group conversations naturally flow between different collective states - from moments of shared laughter, to passionate debates, to intimate gossip. I'm fascinated by how people coordinate their communication to navigate between these states. What psychological dimensions define these different states? And what are the downstream consequences of these states on peoples relationships, sense of self, and well-being?
 
-To explore these questions, I've built a rich dataset of natural group conversations, captured through multiple camera angles 
-and individual microphones worn by participants. From these recordings, I use pre-trained deep neural networks to extract various expressive
-modalities, including facial expressions, body movements in 3D space, voice patterns, and speech content. I complement this multimodal signal 
-data with surveys completed by participants before and after each conversation designed to capture their subjective experience of the conversation, 
-personality traits, and attitudes towards one another.
+To explore these questions, I've built a rich dataset of natural group conversations, captured through multiple camera angles and individual microphones worn by participants. From these recordings, I use pre-trained deep neural networks to extract various expressive modalities, including facial expressions, body movements in 3D space, voice patterns, and speech content. I complement this multimodal signal data with surveys completed by participants before and after each conversation designed to capture their subjective experience of the conversation, personality traits, and attitudes towards one another.
 
-My research focuses on identifying recurring patterns in these multimodal social signals that might structure people's collective navigation 
-through the conceptual space of group conversations. By feeding the social signals detected by pre-trained DNNs into new neural networks, I aim to understand the natural 
-statistical structure of group conversations and how variations on this structure might index different psychological phenomena, from the 
-the formation of social roles to learning about the self through others. 
+My research focuses on identifying recurring patterns in these multimodal social signals that might structure people's collective navigation through the conceptual space of group conversations. By feeding the social signals detected by pre-trained DNNs into new neural networks, I aim to understand the natural statistical structure of group conversations and how variations on this structure might index different psychological phenomena, from the formation of social roles to learning about the self through others.
 
-While the more complex analyses are ongoing, initial findings have already revealed interesting patterns. For instance, participants 
-consistently agree in their ratings of each other's extraversion, which strongly correlates with how much someone speaks during the 
-conversation. This supports psychological theories that view extraversion as fundamentally linked to verbal engagement. Additionally,
-we've found that people feel more connected to those who ask more questions during group conversations, independent of how much they
-speak overall.
+While the more complex analyses are ongoing, initial findings have already revealed interesting patterns. For instance, participants consistently agree in their ratings of each other's extraversion, which strongly correlates with how much someone speaks during the conversation. This supports psychological theories that view extraversion as fundamentally linked to verbal engagement. Additionally, we've found that people feel more connected to those who ask more questions during group conversations, independent of how much they speak overall.
 
-In future work, I plan to integrate a neuroimaging component to this paradigm to better understand whether the same statistical regularities
-that artificial neural networks are able to identify have a priveleged representation in the brain. 
+In future work, I plan to integrate a neuroimaging component to this paradigm to better understand whether the same statistical regularities that artificial neural networks are able to identify have a priveleged representation in the brain.
 
-As my main project, these analyses are in active development, and I look forward to sharing their results here! 
+As my main project, these analyses are in active development, and I look forward to sharing their results here!
