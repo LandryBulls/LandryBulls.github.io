@@ -16,6 +16,7 @@
             align-items: center;
             text-align: center;
             margin-bottom: 0px; 
+            padding-bottom: 1rem; /* Reduce default padding */
         }
         .hero-content, .hero-image {
             flex: 1;
@@ -39,7 +40,8 @@
             color: #007bff;
         }
         h2 {
-            margin-top: 10px; /* Adjust this value as needed */
+            margin-top: 10px; /* Keep this small */
+            margin-bottom: 0.5em; /* Reduce space below h2 */
         }
         .text-content {
             line-height: 1.6;
@@ -50,6 +52,19 @@
         .card, .project-card {
             margin-bottom: 1.5em;
         }
+
+        /* New overrides for spacing */
+        .hero-image-section {
+            /* Reduce bottom margin significantly */
+            margin-bottom: 0.5em !important; /* Use important to override inline style if needed, or edit inline */
+            padding-top: 0 !important; /* Remove top padding from .section */
+            padding-bottom: 0 !important; /* Remove bottom padding from .section */
+        }
+        #challenge-section {
+             padding-top: 0.5em !important; /* Reduce top padding significantly */
+             padding-bottom: 2rem !important; /* Keep some bottom padding */
+        }
+
     </style>
 </head>
 <body>
@@ -67,14 +82,14 @@
             </div>
         </section>
 
-        <section class="section hero-image-section" style="text-align: center; margin: -10px auto 2em; position: relative;">
+        <section class="section hero-image-section" style="text-align: center; margin: -10px auto 0.5em; position: relative;">
             <img src="../images/haring.jpg" alt="Research visualization" style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
             <div style="position: absolute; bottom: 10px; right: 18%; font-size: 0.8em; color: #666;">
                 "Dancing Figures" by Keith Haring, 1987
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="challenge-section">
             <h2>The Challenge of Participation</h2>
             <div class="text-content" id="challenge-content">
                 <!-- Content will be loaded here by JavaScript -->
