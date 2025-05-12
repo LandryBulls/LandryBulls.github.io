@@ -42,6 +42,18 @@ const publications = {
         }
     ],
     
+    conferenceProceedings: [
+        {
+            title: "DIMS Dashboard for Exploring Dynamic Interactions and Multimodal Signals",
+            authors: "Miao G. Q., Trujillo J., Bulls L. S., Thornton M. A., Dale R., & Pouw W.",
+            venue: "In A. Ruggeri, D. Barner, C. Walker, & N. Bramley (Eds.), Proceedings of the 47th Annual Conference of the Cognitive Science Society. San Francisco, CA: Cognitive Science Society.",
+            year: 2025,
+            links: {
+                PDF: "https://gracemiao.com/files/Miao_etal_2025_DIMS_Dashboard_CogSciPostPrint_CameraReady.pdf"
+            }
+        }
+    ],
+
     posters: [
         {
             title: "Detecting distributed social states from multimodal signals in group conversations",

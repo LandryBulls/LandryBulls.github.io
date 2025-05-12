@@ -99,6 +99,7 @@ function renderPublications() {
     const sections = {
         'journalArticles': 'Journal Articles',
         'conferencePresentation': 'Conference Presentations',
+        'conferenceProceedings': 'Conference Proceedings',
         'posters': 'Posters'
     };
 
