@@ -175,15 +175,18 @@
                             <div style="display: flex; justify-content: center; margin: 2em 0; width: 100%;">
                                 <iframe width="800" height="450" src="https://www.youtube.com/embed/LMu_Awmg8bQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%;"></iframe>
                             </div>
-                            <p>Over the past couple of years, I've been developing a DMX lighting automation system that creates real-time, music-reactive lighting. Oculizer combines Spotify metadata with live audio analysis, using mel-scaled FFT to analyze frequency components and map them to DMX values through configurable scenes. Currently, I am working on training a predictive model to automate the selection of lighting scenes based on the audio signal itself rather than relying on the Spotify metadata, allowing for the predictable structure of music to modulate the mapping from sound to light.</p>
+                            <p>Over the past couple of years, I've been developing a DMX lighting automation system that creates real-time, music-reactive lighting. Oculizer uses machine learning to automatically predict and switch between lighting scenes based on live audio analysis. The system leverages <a href="https://github.com/fschmid56/EfficientAT" target="_blank">EfficientAT</a>, a state-of-the-art audio tagging neural network, combined with spectral audio features to understand both the semantic content and acoustic properties of music. This allows Oculizer to intelligently match musical moments to appropriate lighting scenes while using mel-scaled FFT to analyze frequency components and map them to DMX values through configurable scenes.</p>
                             <p>My hope is that this project is the precursor to developing systems that facilitate fruitful social interactions. Our brains are highly sensitive to the spectra of ambient light, sound, and odor in the environment, but the ways in which these factors impact our feelings and behavior often evade conscious awareness. Through a systematic research program of testing the relationships between these factors and human behavior, it's possible to build the knowledge necessary for us to optimize the spaces we inhabit towards connection, cooperation, and a really fun time.</p>
                             <p>The project is open source and available on <a href="https://github.com/LandryBulls/Oculizer" target="_blank">GitHub</a>.</p>
 
                             <h3>Core Features</h3>
                             <ul>
+                                <li>Intelligent scene prediction using <a href="https://github.com/fschmid56/EfficientAT" target="_blank">EfficientAT</a> neural network embeddings</li>
                                 <li>Real-time audio reactivity using mel-scaled FFT analysis</li>
-                                <li>Spotify integration for metadata and playback control</li>
+                                <li>Dual-stream and single-stream audio modes for flexible setups</li>
                                 <li>Support for RGB lights, dimmers, strobes, and lasers</li>
+                                <li>Automatic scene switching based on audio content analysis</li>
+                                <li>Manual scene control with interactive grid-based browser</li>
                                 <li>Live scene switching and MIDI control support</li>
                             </ul>
                         </div>
