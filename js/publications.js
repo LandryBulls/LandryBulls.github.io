@@ -3,11 +3,10 @@ const publications = {
         {
             title: "The structure and correlates of beliefs about mental state intensity dynamics",
             authors: "Bulls, L., & Thornton, M. A.",
-            venue: "In preparation",
+            venue: "PsyArXiv Preprint",
             year: 2025,
             links: {
-                // pdf: "path/to/pdf",
-                // doi: "https://doi.org/..."
+                Preprint: "https://osf.io/preprints/psyarxiv/5r34p"
             }
         },
         {
