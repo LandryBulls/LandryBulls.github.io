@@ -64,6 +64,19 @@
              padding-top: 0.5em !important; /* Reduce top padding significantly */
              padding-bottom: 2rem !important; /* Keep some bottom padding */
         }
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                opacity: 1;
+                filter: brightness(1);
+            }
+            20%, 24%, 55% {
+                opacity: 0.97;
+                filter: brightness(0.98);
+            }
+        }
+        .flicker-image {
+            animation: flicker 4s infinite;
+        }
 
     </style>
 </head>
@@ -83,7 +96,7 @@
         </section>
 
         <section class="section hero-image-section" style="text-align: center; margin: -10px auto 0.5em; position: relative;">
-            <img src="../images/haring.jpg" alt="Research visualization" style="max-width: 65%; height: auto; display: block; margin: 0 auto;">
+            <img src="../images/haring.jpg" alt="Research visualization" class="flicker-image" style="max-width: 50%; height: auto; display: block; margin: 0 auto;">
             <div style="font-size: 0.8em; color: #666; margin-top: 0.5em;">
                 "Dancing Figures" by Keith Haring, 1987
             </div>
@@ -98,16 +111,19 @@
 
         <section class="section">
             <h2 style="text-align: center;">Approach</h2>
-            <div style="display: flex; justify-content: center; margin: 1em 0 2em 0; flex-wrap: wrap; gap: 2em; align-items: flex-start;">
+            <div style="display: flex; justify-content: center; margin: 1em 0 2em 0; flex-wrap: wrap; gap: 2em; align-items: center;">
                 <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 300px;">
-                    <img src="../images/oneframe.png" alt="Research Approach Animation" style="height: 400px; width: auto; object-fit: contain; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <img src="../images/oneframe.png" alt="Research Approach Animation" style="height: 400px; width: auto; object-fit: contain; border-radius: 4px;">
                     <div style="font-size: 0.9em; color: #666; margin-top: 0.5em; text-align: center;">
                         Visualization of extracted social features from a group conversation
                     </div>
                 </div>
-                <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 300px;">
-                    <img src="../images/face_video_cluster.gif" alt="Face Video Cluster Animation" style="height: 400px; width: auto; object-fit: contain; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div style="font-size: 0.9em; color: #666; margin-top: 0.5em; text-align: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; min-width: 300px; text-align: center;">
+                    <div style="position: relative; display: inline-block; border-radius: 4px; overflow: hidden;">
+                        <video src="../images/pviz1_compressed_inverted.mp4" autoplay loop muted style="height: 250px; max-width: 100%; object-fit: contain; display: block;"></video>
+                        <div style="position: absolute; inset: 0; background-color: #f5f6fa; mix-blend-mode: multiply; pointer-events: none;"></div>
+                    </div>
+                    <div style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
                         3D facial motion captured using MediaPipe
                     </div>
                 </div>
@@ -151,12 +167,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             loadContent('challenge-content', '../content/research_challenge.txt');
-            // Note: For project1, we load into the project-card div, but we need to preserve the <h3> and image div.
-            // A better approach would be to have a dedicated content div *inside* project-card.
-            // For now, we'll load into a temporary div and then move the content. This is a bit complex.
-            // Let's simplify: Load content into a new div *after* the image.
-
-            // Create a new div for project 1 content
             const project1Card = document.getElementById('project1-content');
             if (project1Card) {
                  const project1TextContainer = document.createElement('div');
@@ -167,6 +177,41 @@
                  console.error("Project 1 card container not found.");
             }
 
+            // Add noise effect to flicker image
+            const flickerImg = document.querySelector('.flicker-image');
+            if (flickerImg) {
+                const canvas = document.createElement('canvas');
+                canvas.width = 200;
+                canvas.height = 200;
+                const ctx = canvas.getContext('2d');
+                const pixelCount = canvas.width * canvas.height * 4;
+                let noiseData = new Uint8ClampedArray(pixelCount);
+
+                for (let i = 0; i < pixelCount; i += 4) {
+                    noiseData[i] = Math.random() * 150;
+                    noiseData[i + 1] = Math.random() * 150;
+                    noiseData[i + 2] = Math.random() * 150;
+                    noiseData[i + 3] = 50;
+                }
+
+                function generateNoise() {
+                    for (let i = 0; i < pixelCount; i += 4) {
+                        const drift = (Math.random() - 0.5) * 80;
+                        noiseData[i] = Math.max(0, Math.min(255, noiseData[i] + drift));
+                        noiseData[i + 1] = Math.max(0, Math.min(255, noiseData[i + 1] + drift));
+                        noiseData[i + 2] = Math.max(0, Math.min(255, noiseData[i + 2] + drift));
+                        noiseData[i + 3] = 50;
+                    }
+                    const imageData = ctx.createImageData(canvas.width, canvas.height);
+                    imageData.data.set(noiseData);
+                    ctx.putImageData(imageData, 0, 0);
+                    flickerImg.style.backgroundImage = `url(${canvas.toDataURL()})`;
+                    flickerImg.style.backgroundBlendMode = 'overlay';
+                }
+
+                generateNoise();
+                setInterval(generateNoise, 400);
+            }
         });
     </script>
 </body>
