@@ -78,6 +78,15 @@
             animation: flicker 4s infinite;
         }
 
+        @media (max-width: 768px) {
+            .haring-figure {
+                float: none !important;
+                width: 100% !important;
+                max-width: 100%;
+                margin: 0 0 1.5em 0 !important;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -97,7 +106,7 @@
 
         <section class="section" id="challenge-section">
             <h2>The Science of Participation</h2>
-            <div style="float: right; margin: 0 0 1.5em 2em; width: 640px; text-align: center;">
+            <div class="haring-figure" style="float: right; margin: 0 0 1.5em 2em; width: 640px; text-align: center;">
                 <img src="../images/haring.jpg" alt="Research visualization" class="flicker-image" style="width: 100%; height: auto; display: block;">
                 <div style="font-size: 0.8em; color: #666; margin-top: 0.5em;">
                     "Dancing Figures" by Keith Haring, 1987
@@ -126,20 +135,6 @@
                     <div style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
                         3D facial motion captured using MediaPipe
                     </div>
-                </div>
-            </div>
-            <div class="method-cards">
-                <div class="card">
-                    <h3>Multi-Modal Recording</h3>
-                    <p>Capturing natural conversations and cultural events from multiple angles using synchronized audiovisual recordings.</p>
-                </div>
-                <div class="card">
-                    <h3>Artificial Neural Networks</h3>
-                    <p>Using deep learning to extract subtle patterns in body language, speech, and group synchrony.</p>
-                </div>
-                <div class="card">
-                    <h3>Dynamical Systems</h3>
-                    <p>Modeling social interactions as complex systems to understand the mechanisms that give rise to the idiosyncratic patterns of social life.</p>
                 </div>
             </div>
         </section>
