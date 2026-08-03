@@ -55,6 +55,15 @@ const publications = {
 
     posters: [
         {
+            title: "Encodings of multimodal conversational behavior predict trait impressions",
+            authors: "Bulls, L., & Thornton, M. A.",
+            venue: "Computational Cognitive Neuroscience 2026 Annual Conference, New York University, NY",
+            year: 2026,
+            links: {
+                PDF: "../files/ccn26poster.pdf"
+            }
+        },
+        {
             title: "Detecting distributed social states from multimodal signals in group conversations",
             authors: "Bulls, L., & Thornton, M. A.",
             venue: "Social and Affective Neuroscience Society 2025 Conference",
